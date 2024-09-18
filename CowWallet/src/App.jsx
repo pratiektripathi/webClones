@@ -3,11 +3,7 @@ import { SignInFour } from './SignIn'
 import { Tophead } from './components/Header'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-function Home(){
-  const login= True;
-  return (login)?(<SignIn/>):console.log("hello");
-   
-}
+
 
 function SignIn(){
   return (
@@ -22,9 +18,8 @@ function TopHead(){
 }
 
 function App() {
-  return (
+  return (   
     <Router>
-    
       <Tophead />
       <Routes>
         <Route path="/" element={<SignIn />} />

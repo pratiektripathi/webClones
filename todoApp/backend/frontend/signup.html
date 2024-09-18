@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo App | Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-slate-700 flex justify-center items-center" >
+        <div class="sm:w-1/3 bg-slate-400 rounded-2xl border-2 py-2">
+            <div class="flex justify-center">
+                <h1 class="font-bold text-2xl text-gray-900">sign-up</h1>
+            </div>
+            <div class="flex justify-center">
+                <input class="sm:w-1/2 m-3 py-2 px-2 rounded-sm" type="text" id="username" onchange="checknull()" placeholder="username">
+            </div>
+            <div class="flex justify-center">
+                <input class="sm:w-1/2 m-3 py-2 px-2 rounded-sm" type="email" id="email" onchange="checknull()" placeholder="email">
+            </div>
+            <div class="flex justify-center">
+                <input class="sm:w-1/2 m-3 py-2 px-2 rounded-sm" type="password" id="password" onchange="checknull()" placeholder="password">
+            </div>
+            <div class="flex justify-center">
+                <input class="sm:w-1/2 m-3 py-2 px-2 rounded-sm" type="password" id="confirmpassword" onchange="checknull()" placeholder="confirm password">
+            </div>
+
+            <div class="flex justify-center">
+                <button id="signup" class="bg-sky-600 w-1/3 rounded-xl font-bold py-2 my-2" type="button" onclick="handleClick()">sign-up</button>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="/signup.js"></script>
+</body>
+</html>

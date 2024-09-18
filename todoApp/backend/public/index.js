@@ -1,3 +1,4 @@
+
 function addBt(){
     const master = document.getElementById("master");
     const div= document.createElement("div");
@@ -48,8 +49,6 @@ function addBt(){
     delBut.onclick = () => {delBut.parentElement.remove()};
 
     div.className = "w-full shadow-xl shadow-xl text-white grid grid-cols-12 rounded-xl p-5";
-    
-    
     div.appendChild(chekBox);
     div.appendChild(label);
     div.appendChild(editBut);
