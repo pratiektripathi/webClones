@@ -56,6 +56,16 @@ def run_job(job_id: str, input_path: Path) -> None:
         language, segments = transcribe(input_path)
         store.update(job_id, source_language=language)
 
+        if not segments:
+            store.update(
+                job_id,
+                status="error",
+                stage="error",
+                error="No speech could be detected in this video, so there is "
+                "nothing to caption.",
+            )
+            return
+
         store.update(job_id, stage="translating")
         segments = translate_to_hindi(segments, language)
 
