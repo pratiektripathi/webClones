@@ -1,0 +1,13 @@
+[project]
+name = "videosub-backend"
+version = "0.1.0"
+description = "FastAPI backend that burns Hindi subtitles onto uploaded videos"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "deep-translator>=1.11.4",
+    "fastapi>=0.138.0",
+    "faster-whisper>=1.2.1",
+    "python-multipart>=0.0.32",
+    "uvicorn[standard]>=0.49.0",
+]
